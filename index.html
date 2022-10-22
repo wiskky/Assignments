@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" /> 
-    <title>Number Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Number Game</title>
 </head>
+
 <body>
-    <main>
-        <div class="contd">
-            <div class="game-div">
-                <h1>NUMBER GAME</h1>
-                <h3>Enter your username</h3>
-                <input type="text" id="name" placeholder="Enter your username"/>
-                <h3>Predict between 1 and <span class="increase-no">2</span></h3>
-                <input type="text" id="predictno" placeholder="Enter your number"/>
-                <h3>Result: <span class="init-no" id="result">0</span></h3>
-                <button type="button" id="run">RUN</button>
-            </div> 
-        
-            <div class="score-card">
-                <h1>Game Scores </h1>
-                <h3>Total Attempt</h3>
-                <h3 class="attempt">0</h3>
-                <h1>Total score</h1>
-                <h3 class="total-score" id="total-score">0</h3>
-                <button type="submit">Try Again</button>
-            </div>
+  <main>
+    <div class="contd">
+      <div class="game-div">
+        <h1>NUMBER GAME</h1>
+        <form name="form" id="forms">
+          <h3>Enter your username</h3>
+          <input type="text" id="name" placeholder="Enter your username" />
+          <h3>Predict between 1 and <span class="increase-no">2</span></h3>
+          <input type="text" id="predictno" placeholder="Enter your number" />
+          <h3>Result: <span class="init-no" id="result">0</span></h3>
+          <h3 id="msgout"></h3>
+          <h3 id="gameover"></h3>
+          <input type="submit" id="run" value="RUN" />
+      </div>
 
-        </div>
-    </main>
+      <div class="score-card">
+        <h1>Game Scores </h1>
+        <h3>Total Attempt</h3>
+        <h3 id="attempt">0</h3>
+        <h1>Total score</h1>
+        <h3 class="total-score" id="total-score">0</h3>
+        <input type="submit" value="Try Again" />
+      </div>
+      </form>
+    </div>
+  </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
