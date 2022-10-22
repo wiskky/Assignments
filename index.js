@@ -1,13 +1,15 @@
-let userName = prompt("Enter your username");
+let userName = prompt("Enter your username");  
 
+//Initial declaration
 let score = 0;
 let level = 1;
 let maxNo = 2;
 
+console.log(userName + " Start level " + level);
+
+//Declaring function
 function noGame() {
-  console.log(userName + " Start level " + level);
-  let userRange = Math.floor(Math.random() * maxNo) + 1;
-  console.log(userRange);
+  let userRange = Math.floor(Math.random() * maxNo) + 1;  //generating range from 1 to 2
   console.log("Enter number from 1 to " + maxNo);
   let userGuess = parseInt(prompt("Enter your number "));
   if (userRange === userGuess) {
