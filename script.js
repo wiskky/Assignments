@@ -12,8 +12,12 @@ form.onsubmit = function(e) {
 
   function guessNumber() {
     let userRange = Math.floor(Math.random() * maxNo) + 1;
+    alert(userRange);
     if (userRange === userPredict) {
       score += 10;
+
+      document.getElementById("gamer").innerHTML = userRange;
+
       let msg = "Weldone " + userName + " CORRECT! your score is ";
       document.getElementById("msgout").innerHTML = msg;
       level += 1;
