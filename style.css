@@ -1,80 +1,241 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color:#f0f8ff;
-    display: flex;
-    place-items: center;
-    min-height: 100vh;
-}
-main{
-
-    width: 900px;
-    height: 500px;
-    background-color: #e6e6e6;
+    
+  }
+  body {
+    background: rgba(223, 220, 220, 0.5)50%;
+  }
+  
+  nav {
+    height: 70px;
     margin: auto;
-}
-.contd{
+    background-color: rgb(135, 132, 139);
+    
+  }
 
+  .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+
+  .logo{
+    font-size: 35px;
+    color: #ff7200;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+  }
+  .menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+    float: right;
     display: flex;
-    place-items: center;
-    place-content: center;
-}
-.game-div{
-    margin-right: 5px;
-    
-}
-.game-div, .score-card{
-    width: 350px;
-    height: 360px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 27px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #ffffff;
+  }
+  a:hover {
+    color: #ff7200;
+  }
+
+  /*contact us */
+  .msg {
+    width: 700px;
+    height: auto;
     background-color: #ffffff;
-    margin-top: 70px;
-    padding: 40px;
-    border: 1px solid rgb(255, 0, 119);
-    border-radius: 5px;
-    
-}
-.game-div h1, .score-card h1{
-    color: rgb(255, 0, 119);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+  h2{
+    font-size: 35px;
+    color: #ff7200;
+    margin: 15px;
+  }
+  input, textarea {
+    width: 100%;
     margin-bottom: 15px;
-
-}
-
-.game-div h3, .score-card h3{
-    color: mediumblue;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.game-div button, .score-card button {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px;
+    outline: none;
     border: none;
-    background-color: rgb(255, 0, 119);
-    color: white;
     font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 20px;
+    background-color: #eee;
+    border-radius: 40px;
+  }
 
+  input::placeholder, textarea::placeholder{
+    color: #bbb;
+    font-weight: 400;
   }
-  button:hover{
-    background-color: #ffe6f9;
-    color: #ff66d9;
+  .headname {
+    color: #ff7200;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
   }
-  .game-div input{
-    background-color: #ffe6f9;
-    font-size: 15px;
-    border: 0;
-    border-radius: 5px;
-    height: 30px;
-    outline-color: #a38f9e;
-    cursor: text;
- 
+  button{
+    width: 100%;
+    background-color: #ff7200;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 40px;
+    cursor: pointer;
   }
-  .game-div input::placeholder {
-    color: #a38f9e;
-    font-size: 16px;
+  #about{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    background: #fff;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
   }
+
+  .myname, .myimg{
+    background: rgb(243, 243, 243);
+    position: relative;
+    width: 80%;
+    height: 350px;
+  }
+
+  .myname {
+    margin-left: 40px;
+  }
+  .myimg{
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+   
+  .myname h1{
+    font-size: 30px;
+    color: #ff7200;
+    font-family:fantasy;
+    margin: 30px;
+       
+  }
+
+  #about .abtword{
+    padding-left:20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color:#e86c6c;
+    font-family: Arial;
+    letter-spacing: 1px;
+    line-height: 15px;
+    }
+
+    .ourservices{
+      width: 50%;
+      height: 450px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      background: #fff;
+      
+    }
+    .ourser{
+      width: 300px;
+      height: 280px;
+      background-color: #ff7200;
+      margin: 10px;
+      
+
+    }
+    .serhold{
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: relative;
+      left: 30px;
+    }
+
+    .serhead{
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .ourser h3{
+      color: #ffffff;
+      font-size: 28px;
+      text-align: center;
+      margin: 10px;
+    }
+    .ourser img{
+      width: 300px;
+      height: 240px;
+    }
+    footer{
+      background-color: #3a3737;
+      height: 50px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .myfooter {
+      padding: 15px;
+    }
+
+    #project{
+      background-color: #ffffff;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    .projhead{
+      text-align: center;
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .projhold{
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: relative;
+      margin-left: 8%;
+    }
+    .ourproj{
+      width: 350px;
+      height: 300px;
+      background-color: #e86c6c;
+      margin: 20px;
+      left: 40%;
+    }
+   
+   
+    
+      
+   

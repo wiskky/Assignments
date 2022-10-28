@@ -1,45 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>Number Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-  <main>
-    <div class="contd">
-      <div class="game-div">
-        <h1>NUMBER GAME</h1>
-        <form name="form" id="forms">
-          <h3>Enter your username</h3>
-          <input type="text" id="name" placeholder="Enter your username" />
-          <h3>Predict between 1 and <span class="increase-no">2</span></h3>
-          <input type="text" id="predictno" placeholder="Enter your number" />
-          <h3>Result: <span class="init-no" id="result">0</span></h3>
-          <h3 id="msgout"></h3>
-          <h3 id="gameover"></h3>
-          <h3 id="gamer"></h3>
-          <input type="submit" id="run" value="RUN" />
-      </div>
+  <body>
+    <header>
 
-      <div class="score-card">
-        <h1>Game Scores </h1>
-        <h3>Total Attempt</h3>
-        <h3 id="attempt">0</h3>
-        <h1>Total score</h1>
-        <h3 class="total-score" id="total-score">0</h3>
-        <input type="submit" value="Try Again" />
-      </div>
-      </form>
-    </div>
-  </main>
+      <nav>
+        <div class="icon">
+          <h2 class="logo">WA</h2>
+        </div>
+        <div class="menu">
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#project">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </div>  
+      </nav>
+    </header>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</body>
+    <main>
+
+    </main>
+    <section id="about">
+      <div class="myname">
+        <h1>Adeniyi Wisdom Oyewole</h1>
+        <p class="abtword">Solution driven and outstanding professional with experience in 
+          Web development both frontend and 
+          backend, Database management, IT support, Team management and customer service
+          relations. A self starter with strong leadership ability to drive a team in achieving 
+          organizational goals through exceptional communication, training, consistent task execution,
+           meeting deadlines, innovation and professionalism, Constantly seeking improvement opportunities 
+           and implementing continuous improvement initiatives.<br>
+          My hobbies include football, games and swimming.
+
+        </p>
+      </div>
+      <div class="myimg">
+        <img src="https://github.com/wiskky/class/blob/main/img.jpeg?raw=true" width="350px" height="350px"
+          alt="Wisdom_image">
+      </div>
+      
+    </section>
+   
+    <section id="service">
+      <h2 class="serhead">Our Services</h2>
+      <div class="serhold">
+        <div class="ourser">
+          <h3>Web Development</h3>
+          <img src="https://github.com/wiskky/class/blob/main/web-dev1.jpg?raw=true" alt="Web Devp Picture">
+        </div>
+        <div class="ourser">
+          <h3>Networking</h3>
+          <img src="https://github.com/wiskky/class/blob/main/netwoking.jpg?raw=true" alt="Netwok Picture">
+        </div>
+        <div class="ourser">
+          <h3>IT Operations</h3>
+          <img src="https://github.com/wiskky/class/blob/main/ipops.jpg?raw=true" alt="IT Op Picture">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="project">
+
+      <h2 class="projhead">Our Projects</h2>
+      <div class="projhold">
+        <div class="ourproj">
+          
+          <img src="https://github.com/wiskky/class/blob/main/imageeeer.jpg?raw=true" alt="Project 1 Picture">
+        </div>
+        <div class="ourproj">
+         
+          <img src="https://github.com/wiskky/class/blob/main/imageeer.jpg?raw=true" alt="Project 2 Picture">
+        </div>
+      </div>  
+
+      <div class="projhold">
+        <div class="ourproj">
+    
+          <img src="https://github.com/wiskky/class/blob/main/imageer.jpg?raw=true" alt="Project 3 picture">
+        </div>
+        <div class="ourproj">
+          
+          <img src="https://github.com/wiskky/class/blob/main/imager.jpg?raw=true" alt="project 4 Picture">
+        </div>
+      </div>  
+    </section>
+
+
+
+
+    <footer>
+      <p class="myfooter">copyright Wisdom'22</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  </body>
 
 </html>
