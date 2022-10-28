@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f0f8ff;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+main{
+
+    width: 900px;
+    height: 500px;
+    background-color: #e6e6e6;
+    margin: auto;
+}
+.contd{
+
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+.game-div{
+    margin-right: 5px;
+    
+}
+.game-div, .score-card{
+    width: 350px;
+    height: 360px;
+    background-color: #ffffff;
+    margin-top: 70px;
+    padding: 40px;
+    border: 1px solid rgb(255, 0, 119);
+    border-radius: 5px;
+    
+}
+.game-div h1, .score-card h1{
+    color: rgb(255, 0, 119);
+    margin-bottom: 15px;
+
+}
+
+.game-div h3, .score-card h3{
+    color: mediumblue;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.game-div button, .score-card button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 0, 119);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+  }
+  button:hover{
+    background-color: #ffe6f9;
+    color: #ff66d9;
+  }
+  .game-div input{
+    background-color: #ffe6f9;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    outline-color: #a38f9e;
+    cursor: text;
+ 
+  }
+  .game-div input::placeholder {
+    color: #a38f9e;
+    font-size: 16px;
+  }

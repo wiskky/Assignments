@@ -1,3 +1,46 @@
+var form = document.getElementById("forms");
+form.onsubmit = function(e) {
+  e.preventDefault();
+
+
+  var userName = document.getElementById("name").value;
+  var userPredict = document.getElementById("predictno").value;
+
+  let score = 0;
+  let level = 1;
+  let maxNo = 2;
+
+  function guessNumber() {
+    let userRange = Math.floor(Math.random() * maxNo) + 1;
+    alert(userRange);
+    if (userRange === userPredict) {
+      score += 10;
+
+      document.getElementById("gamer").innerHTML = userRange;
+
+      let msg = "Weldone " + userName + " CORRECT! your score is ";
+      document.getElementById("msgout").innerHTML = msg;
+      level += 1;
+      document.getElementById("attempt").innerHTML = level;
+      document.getElementById("total-score").innerHTML = score;
+
+      maxNo += 1;
+      guessNumber();
+    } else {
+      let isOver = "You enter a wrong number. GAME OVER!";
+      document.getElementById("gameover").innerHTML = isOver;
+      level -= 1;
+      document.getElementById("total-score").innerHTML = score;
+    }
+  }
+  guessNumber();
+}
+
+
+
+
+
+/*
 $(document).ready(function() {
   //Declaring initial max number
   var maxNo = 2;
@@ -61,3 +104,4 @@ $(document).ready(function() {
 
 
 })
+*/
