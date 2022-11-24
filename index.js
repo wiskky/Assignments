@@ -5,7 +5,7 @@ let score = 0;
 let level = 1;
 let maxNo = 2;
 
-console.log(userName + " Start level " + level);
+console.log(userName + " Start level " + level);   //Output some information
 
 //Declaring function
 function noGame() {
